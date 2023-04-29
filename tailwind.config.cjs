@@ -8,6 +8,9 @@ module.exports = {
 			 "custom-yellow": "#ffdd00"
 			},
 		},
+		fontFamily: {
+			montserrat: ["Montserrat", "sans-serif"],
+		},
 	},
 	plugins: [],
 }

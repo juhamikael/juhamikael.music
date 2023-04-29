@@ -1,0 +1,11 @@
+---
+import { Icon } from "astro-icon";
+const { link, iconPack, iconName } = Astro.props;
+import "../styles/globals.css";
+---
+
+<div class="scale-icon">
+  <a href={link}>
+    <Icon pack={iconPack} name={iconName} class="h-6 text-white" />
+  </a>
+</div>

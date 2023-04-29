@@ -16,12 +16,8 @@ const { type, imgPath, text, href, hasIcon, iconName, iconPack } = Astro.props;
 
 {
   type === "image-button" && (
-    <a class="scale-card" href={href}>
-      <img
-        src={imgPath}
-        alt="Buy me a coffee"
-        class="mt-5 h-10 cursor-pointer "
-      />
+    <a class=" move-icon" href={href}>
+      <img src={imgPath} alt="Buy me a coffee" class="h-6 cursor-pointer " />
     </a>
   )
 }
