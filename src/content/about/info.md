@@ -15,7 +15,8 @@ My passion for music extends to my dedication to the software development, as I'
 
 ### Contact
 
-If you wish to contact me, send me message through some of the social medias below. Easiest way is to join my Discord channel
+If you wish to contact me, send me message through some of the social medias below. Easiest way and fastest way is to join my Discord channel
+
 ### TODO
 
 I'm planning to build also Blog for this website where I share my favorite tools, some tips and so on.
