@@ -8,15 +8,23 @@ import buyMeCoffee from "../assets/bmc-button.svg";
 import Tree from "../components/Tree";
 import CustomButton from "../components/CustomButton";
 import SocialMedia from "../components/SocialMedia.astro";
+import About from "../components/About.astro";
+import Spotify from "../components/Spotify";
 ---
 
 <Layout>
   <main
-    class="grid h-screen font-montserrat font-bold text-white lg:grid-cols-2"
+    class="mx-10 grid h-screen font-montserrat font-bold text-white lg:grid-cols-2"
   >
-    <section class="mx-10">
-      <div class="flex justify-end">
-        <img src={profilePic} class="h-[550px] rounded-xl object-cover" />
+    <section>
+      <div class="mx-10 flex lg:justify-end">
+        <div class="flex flex-col place-content-center">
+          <img
+            src={profilePic}
+            class="h-[550px] w-[400px] rounded-xl object-cover"
+          />
+          <About />
+        </div>
       </div>
     </section>
     <section id="tree" class="">
@@ -98,7 +106,7 @@ import SocialMedia from "../components/SocialMedia.astro";
           client:load
         />
         <CustomButton
-          text="Check community Revived."
+          text="Check out the Revived. community"
           link="https://revived.tv/"
           icon="revived"
           client:load
@@ -120,9 +128,11 @@ import SocialMedia from "../components/SocialMedia.astro";
           icon="music"
           client:load
         />
+
+        <Spotify client:load />
       </section>
 
-      <section class="flex">
+      <!-- <section class="flex">
         <Button
           type="back-button"
           href="https://www.juhamikael.info/"
@@ -131,7 +141,7 @@ import SocialMedia from "../components/SocialMedia.astro";
           iconName="sharp-arrow-back-ios-new"
           iconPack="ic"
         />
-      </section>
+      </section> -->
     </section>
   </main>
 </Layout>

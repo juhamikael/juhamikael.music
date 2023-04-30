@@ -1,0 +1,20 @@
+---
+import Markdown from "@astrojs/markdown-component";
+import { getCollection } from "astro:content";
+const about = await getCollection("about");
+---
+
+<>
+  {
+    about.map((data) => (
+      <div class="font-montserrat">
+        <h2 class=" mx-2 my-2 text-3xl font-bold text-white">
+          {data.data.title}
+        </h2>
+        <div class="prose prose-sm dark:prose-invert prose-p:mt-5 prose-a:font-bold prose-a:text-custom-yellow my-4 mx-2 w-[400px] font-normal text-white">
+          <Markdown>{data.body}</Markdown>
+        </div>
+      </div>
+    ))
+  }
+</>
