@@ -10,14 +10,18 @@ interface ICustomButtonProps {
   text: string;
 }
 
-const CustomButton: FC<ICustomButtonProps> = ({ link, icon, text }) => {
+const CustomButton: FC<ICustomButtonProps> = ({
+  link,
+  icon,
+  text,
+}) => {
   console.log(`../assets/${icons[icon]}`);
   return (
     <a
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="scale-card mt-4 inline-block w-96 rounded-xl bg-custom-yellow p-2"
+      className="scale-card mt-4 inline-block w-80 rounded-xl bg-yellow-600 p-2"
     >
       <div className="ml-4 flex place-items-center">
         <div className="flex w-8 justify-center">
@@ -31,7 +35,7 @@ const CustomButton: FC<ICustomButtonProps> = ({ link, icon, text }) => {
             />
           )}
         </div>
-        <p className=" ml-5 text-sm font-bold text-[#0f0f0f]">{text}</p>
+        <p className={`ml-5 text-xs font-bold text-[#0f0f0f]`}>{text}</p>
       </div>
     </a>
   );

@@ -1,5 +1,6 @@
 // Define a type for the supported icons
 export type SupportedIcons =
+  | "back"
   | "spotify"
   | "youtube"
   | "soundcloud"
@@ -10,6 +11,7 @@ export type SupportedIcons =
 
 // Use Record utility type to define the type of the icons object
 export const icons: Record<SupportedIcons, string> = {
+  back:"ic:sharp-arrow-back-ios-new",
   spotify: "simple-icons:spotify",
   youtube: "simple-icons:youtube",
   soundcloud: "simple-icons:soundcloud",

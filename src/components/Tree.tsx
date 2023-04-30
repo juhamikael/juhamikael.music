@@ -28,7 +28,7 @@ const Tree: FC<ILinktreeProps> = ({
     <div className="mt-4 font-montserrat">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="scale-card w-96 rounded-xl bg-custom-yellow p-2 "
+        className="scale-card w-80 rounded-xl bg-yellow-600 p-2 "
       >
         <div className="ml-4 flex place-items-center">
           <div className="flex w-8 ">
@@ -38,7 +38,7 @@ const Tree: FC<ILinktreeProps> = ({
               className="text-[#0f0f0f]"
             />
           </div>
-          <p className=" ml-5 text-sm font-bold text-[#0f0f0f]">
+          <p className=" ml-5 text-xs font-bold text-[#0f0f0f]">
             Check out my {platform}
           </p>
         </div>

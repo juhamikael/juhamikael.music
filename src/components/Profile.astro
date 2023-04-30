@@ -1,0 +1,13 @@
+---
+import About from "./About.astro";
+import profilePic from "../assets/profile-pic.png";
+import "../styles/profile.css";
+---
+
+<section id="profile" class="flex flex-col lg:mx-10 lg:items-end">
+  <img
+    src={profilePic}
+    class="h-[350px] w-[90%] rounded-xl object-cover lg:h-[500px] lg:w-2/3"
+  />
+  <About />
+</section>

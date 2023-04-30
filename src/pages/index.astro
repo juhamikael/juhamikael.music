@@ -1,147 +1,22 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import profilePic from "../assets/profile-pic.png";
-import logo from "../assets/JuhaMikael-Logo.svg";
 import "../styles/globals.css";
-import Button from "../components/Button.astro";
-import buyMeCoffee from "../assets/bmc-button.svg";
-import Tree from "../components/Tree";
-import CustomButton from "../components/CustomButton";
-import SocialMedia from "../components/SocialMedia.astro";
+
 import About from "../components/About.astro";
-import Spotify from "../components/Spotify";
+import Profile from "../components/Profile.astro";
+import Tree from "../components/Tree.astro";
 ---
 
 <Layout>
-  <main
-    class="mx-10 grid h-screen font-montserrat font-bold text-white lg:grid-cols-2"
-  >
-    <section>
-      <div class="mx-10 flex lg:justify-end">
-        <div class="flex flex-col place-content-center">
-          <img
-            src={profilePic}
-            class="h-[550px] w-[400px] rounded-xl object-cover"
-          />
-          <About />
-        </div>
+  <main class="flex place-content-center">
+    <div
+      class="grid font-montserrat font-bold text-white lg:mx-10 lg:grid-cols-2"
+    >
+      <div class="flex justify-end">
+        <Profile />
       </div>
-    </section>
-    <section id="tree" class="">
-      <section class="mt-10">
-        <div class="flex justify-start">
-          <img src={logo} class="h-24 rounded-xl object-cover" />
-        </div>
-      </section>
 
-      <section id="social-medias" class="mt-5 flex items-center gap-x-4">
-        <SocialMedia
-          iconName="instagram"
-          iconPack="simple-icons"
-          link="https://www.instagram.com/juhamikaell/"
-        />
-        <SocialMedia
-          iconName="spotify"
-          iconPack="simple-icons"
-          link="https://open.spotify.com/artist/2heJl7jzvTYoHyR5xwSSea?si=w15Co8_TS-WudI9KMG29Cw&nd=1"
-        />
-        <SocialMedia
-          iconName="facebook"
-          iconPack="simple-icons"
-          link="https://www.facebook.com/juhasmusic"
-        />
-        <SocialMedia
-          iconName="linkedin"
-          iconPack="simple-icons"
-          link="https://www.linkedin.com/in/juha-savikko/"
-        />
-        <Button
-          type="image-button"
-          imgPath={buyMeCoffee}
-          href="https://www.buymeacoffee.com/juhamikael"
-        />
-      </section>
-      <section class="mt-8 flex flex-col">
-        <div class="text-3xl">Music</div>
-        <Tree
-          artistProfiles={["Juha Mikael", "Juha", "Visioc"]}
-          link={[
-            "https://open.spotify.com/artist/2heJl7jzvTYoHyR5xwSSea?si=v8SkUoBcTVKav4SO0FM_TA",
-            "https://open.spotify.com/track/6rm9DvkBN2sL7seMuxaGJO?si=aa899b2155804972",
-            "https://open.spotify.com/artist/7Da1EQvDO77V9bAZwqYGcv?si=pWmAgCbrTFK2fg-BKYgRIQ",
-          ]}
-          icon="spotify"
-          notificationText={"I have changed my artist name a few times. So my music is spread out on different artist accounts."}
-          platform="Spotify"
-          client:load
-        />
-        <Tree
-          artistProfiles={[
-            "Juha Mikael",
-            "Juha Mikael Releases",
-            "Juha Mikael ID's",
-          ]}
-          link={[
-            "https://soundcloud.com/juhasmusic",
-            "https://soundcloud.com/juhamikaelbeats",
-            "https://soundcloud.com/visioc",
-          ]}
-          icon="soundcloud"
-          notificationText={"My main account Juha Mikael is full. So I have created a few more accounts and have spread my music on them."}
-          platform="Soundcloud"
-          client:load
-        />
-
-        <Tree
-          artistProfiles={["Juha Mikael"]}
-          link={["https://soundcloud.com/juhasmusic"]}
-          icon="youtube"
-          platform="Youtube"
-          client:load
-        />
-        <CustomButton
-          text="Join my Discord server"
-          link="https://discord.gg/cxp7EKw53w"
-          icon="discord"
-          client:load
-        />
-        <CustomButton
-          text="Check out the Revived. community"
-          link="https://revived.tv/"
-          icon="revived"
-          client:load
-        />
-      </section>
-
-      <section class="flex flex-col">
-        <div class="mt-10 text-3xl">Downloads</div>
-        <CustomButton
-          text="Free Downloads"
-          link="https://www.dropbox.com/sh/yig5o9kvw2bzcov/AAAeZQPXGZcoRGbqDN_NoPjha?dl=0"
-          icon="music"
-          client:load
-        />
-
-        <CustomButton
-          text="Templates on Sale"
-          link="https://juhamikaelmusic.gumroad.com/"
-          icon="music"
-          client:load
-        />
-
-        <Spotify client:load />
-      </section>
-
-      <!-- <section class="flex">
-        <Button
-          type="back-button"
-          href="https://www.juhamikael.info/"
-          text="Back"
-          hasIcon={true}
-          iconName="sharp-arrow-back-ios-new"
-          iconPack="ic"
-        />
-      </section> -->
-    </section>
+      <Tree />
+    </div>
   </main>
 </Layout>

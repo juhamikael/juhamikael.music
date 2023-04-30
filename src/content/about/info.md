@@ -13,6 +13,9 @@ I'm expertly navigating both FL Studio and Ableton, harnessing the full potentia
 
 My passion for music extends to my dedication to the software development, as I'm currently pursuing studies in the field. You can find some cool and useful software projects I have built from [My website](https://dev.juhamikael.info) (Includes some music production utility softwares)
 
+### Contact
+
+If you wish to contact me, send me message through some of the social medias below. Easiest way is to join my Discord channel
 ### TODO
 
 I'm planning to build also Blog for this website where I share my favorite tools, some tips and so on.
